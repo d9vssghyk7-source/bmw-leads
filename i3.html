@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================ -->
+  <!--  CAMPANHA: BMW i3 — Berlina Elétrica                        -->
+  <!--  Duplica este ficheiro para cada novo modelo/campanha        -->
+  <!-- ============================================================ -->
+
+  <title>BMW i3 — Berlina Elétrica | Rui Moutinho</title>
+
+  <!-- ── Open Graph (preview WhatsApp / SMS / email) ── -->
+  <!-- IMPORTANTE: og:image e og:url devem usar URL absoluta do GitHub Pages -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="BMW i3 — Berlina Elétrica">
+  <meta property="og:description" content="Elétrico, elegante e inovador. Descubra o BMW i3 e marque já o seu test drive.">
+  <meta property="og:image"       content="https://d9vssghyk7-source.github.io/bmw-leads/images/i3.jpg">
+  <meta property="og:url"         content="https://d9vssghyk7-source.github.io/bmw-leads/i3.html">
+  <meta property="og:locale"      content="pt_PT">
+  <meta property="og:site_name"   content="BMW — Rui Moutinho">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="BMW i3 — Berlina Elétrica">
+  <meta name="twitter:description" content="Elétrico, elegante e inovador. Descubra o BMW i3.">
+  <meta name="twitter:image"       content="https://d9vssghyk7-source.github.io/bmw-leads/images/i3.jpg">
+
+  <!-- ── Web3Forms access key ── -->
+  <meta name="web3forms-key" content="e0e786a6-865d-4a8a-b94b-a78455c35213">
+
+  <!-- ── Configuração da página ── -->
+  <meta name="modelo"      content="BMW i3">
+  <meta name="tipo"        content="Berlina · Elétrico">
+  <meta name="badge"       content="Novo">
+  <meta name="headline"    content="O futuro começa aqui.">
+  <meta name="subheadline" content="Elétrico, elegante, inovador.">
+  <meta name="descricao"   content="O BMW i3 redefine a mobilidade elétrica com design arrojado, tecnologia de ponta e uma condução que emociona. Interior em materiais sustentáveis, autonomia até 400 km e carregamento rápido. Descubra uma nova forma de viver o prazer de conduzir.">
+  <meta name="imagem-carro" content="images/i3.jpg">
+  <!-- Descomenta e preenche se quiseres mostrar preço: -->
+  <!-- <meta name="preco" content="A partir de 45 900 €"> -->
+  <meta name="preco" content="">
+
+  <!-- ============================================================ -->
+  <!--  FIM DA CONFIGURAÇÃO                                         -->
+  <!-- ============================================================ -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bmw-blue: #1c69d4; --bmw-dark: #0a0a0a; --bmw-gray: #1a1a1a;
+      --bmw-light: #f0f0f0; --bmw-muted: #888; --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; background: var(--bmw-dark); color: var(--bmw-light); min-height: 100vh; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; border-bottom: 1px solid #222; position: sticky; top: 0; background: rgba(10,10,10,0.92); backdrop-filter: blur(12px); z-index: 100; }
+    .logo { font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #fff; }
+    .logo span { color: var(--bmw-blue); }
+    .badge-header { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--bmw-blue); border: 1px solid var(--bmw-blue); padding: 3px 8px; border-radius: 4px; }
+    .hero { padding: 48px 24px 32px; max-width: 480px; margin: 0 auto; text-align: center; }
+    .tags { display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; }
+    .tag { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; border: 1px solid #333; color: var(--bmw-muted); }
+    .tag.novo { border-color: var(--bmw-blue); color: var(--bmw-blue); }
+    .modelo-nome { font-size: 52px; font-weight: 300; letter-spacing: -0.02em; line-height: 1; margin-bottom: 4px; }
+    .modelo-tipo { font-size: 14px; color: var(--bmw-muted); margin-bottom: 28px; }
+    .car-image { width: 100%; max-width: 420px; height: auto; display: block; margin: 0 auto 24px; border-radius: 8px; }
+    .car-image-placeholder { width: 100%; max-width: 420px; height: 220px; margin: 0 auto 24px; background: linear-gradient(135deg, #111 0%, #1a1a2e 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #333; font-size: 13px; }
+    .tipo-badge { display: inline-block; font-size: 13px; color: var(--bmw-blue); margin-bottom: 32px; cursor: pointer; }
+    .cta-btn { display: block; width: 100%; max-width: 420px; margin: 0 auto; padding: 18px; background: var(--bmw-blue); color: #fff; font-size: 16px; font-weight: 600; letter-spacing: 0.02em; border: none; border-radius: var(--radius); cursor: pointer; text-decoration: none; transition: background 0.2s, transform 0.1s; }
+    .cta-btn:active { transform: scale(0.98); } .cta-btn:hover { background: #1557b8; }
+    .divider { height: 1px; background: #1e1e1e; max-width: 480px; margin: 0 auto; }
+    .descricao-section { max-width: 480px; margin: 0 auto; padding: 36px 24px; }
+    .section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bmw-muted); margin-bottom: 12px; }
+    .headline { font-size: 26px; font-weight: 300; line-height: 1.25; margin-bottom: 16px; }
+    .subheadline { font-size: 16px; color: var(--bmw-blue); margin-bottom: 16px; }
+    .descricao-texto { font-size: 15px; color: #aaa; line-height: 1.65; }
+    .preco { margin-top: 20px; font-size: 18px; font-weight: 500; color: #fff; }
+    .preco span { color: var(--bmw-muted); font-size: 13px; }
+    .form-section { max-width: 480px; margin: 0 auto; padding: 0 24px 60px; }
+    .form-title { font-size: 22px; font-weight: 400; margin-bottom: 6px; }
+    .form-sub { font-size: 14px; color: var(--bmw-muted); margin-bottom: 28px; }
+    .form-group { margin-bottom: 16px; }
+    label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--bmw-muted); margin-bottom: 6px; }
+    input, select, textarea { width: 100%; background: var(--bmw-gray); border: 1px solid #2a2a2a; border-radius: 8px; color: #fff; font-size: 15px; padding: 14px 16px; outline: none; transition: border-color 0.2s; font-family: inherit; }
+    input:focus, select:focus, textarea:focus { border-color: var(--bmw-blue); }
+    input::placeholder, textarea::placeholder { color: #444; }
+    select option { background: #1a1a1a; }
+    textarea { resize: vertical; min-height: 90px; }
+    .hp { display: none !important; }
+    .submit-btn { width: 100%; padding: 18px; background: var(--bmw-blue); color: #fff; font-size: 16px; font-weight: 600; border: none; border-radius: var(--radius); cursor: pointer; margin-top: 8px; transition: background 0.2s, transform 0.1s; font-family: inherit; }
+    .submit-btn:active { transform: scale(0.98); } .submit-btn:hover { background: #1557b8; }
+    .submit-btn:disabled { background: #333; color: #666; cursor: not-allowed; }
+    .success-msg { display: none; text-align: center; padding: 40px 24px; }
+    .success-msg .check { font-size: 48px; margin-bottom: 16px; }
+    .success-msg h3 { font-size: 22px; font-weight: 400; margin-bottom: 8px; }
+    .success-msg p { font-size: 14px; color: var(--bmw-muted); }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #333; border-top: 1px solid #111; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BMW <span>·</span> Rui Moutinho</div>
+    <div class="badge-header" id="hdr-badge">Novo</div>
+  </header>
+
+  <section class="hero">
+    <div class="tags">
+      <span class="tag" id="hero-tipo-tag">Berlina</span>
+      <span class="tag novo" id="hero-badge-tag">Novo</span>
+    </div>
+    <h1 class="modelo-nome" id="hero-modelo">i3</h1>
+    <p class="modelo-tipo" id="hero-subtipo">Berlina · Elétrico</p>
+    <div id="car-img-wrapper"></div>
+    <a class="tipo-badge" id="hero-motoriz" href="#formulario">Elétrico ›</a>
+    <a class="cta-btn" href="#formulario">Saiba mais</a>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="descricao-section">
+    <p class="section-label">Sobre o modelo</p>
+    <h2 class="headline" id="desc-headline"></h2>
+    <p class="subheadline" id="desc-sub"></p>
+    <p class="descricao-texto" id="desc-texto"></p>
+    <p class="preco" id="desc-preco" style="display:none"></p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="form-section" id="formulario">
+    <p class="section-label">Interesse</p>
+    <h2 class="form-title">Quero saber mais</h2>
+    <p class="form-sub">Deixe o seu contacto e entro em breve.</p>
+
+    <div class="success-msg" id="success">
+      <div class="check">✅</div>
+      <h3>Pedido recebido!</h3>
+      <p>Entro em contacto consigo brevemente.</p>
+    </div>
+
+    <form id="lead-form">
+      <input type="text" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="access_key"  id="f-access-key">
+      <input type="hidden" name="subject"      id="f-subject">
+      <input type="hidden" name="from_name"    value="BMW Leads — Landing Page">
+      <input type="hidden" name="redirect"     value="false">
+      <input type="hidden" name="cc"           value="rui.moutinho@caetano.pt">
+
+      <div class="form-group">
+        <label for="f-nome">Nome *</label>
+        <input type="text" id="f-nome" name="nome" placeholder="O seu nome completo" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="f-telefone">Telemóvel *</label>
+        <input type="tel" id="f-telefone" name="telefone" placeholder="9X XXX XXXX" required autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label for="f-email">Email (opcional)</label>
+        <input type="email" id="f-email" name="email" placeholder="exemplo@email.pt" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="f-interesse">O que pretende saber?</label>
+        <select id="f-interesse" name="interesse">
+          <option value="">Selecionar...</option>
+          <option>Preços e condições</option>
+          <option>Test drive</option>
+          <option>Financiamento</option>
+          <option>Informação geral</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="f-msg">Mensagem (opcional)</label>
+        <textarea id="f-msg" name="mensagem" placeholder="Alguma questão ou preferência?"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">Enviar pedido</button>
+    </form>
+  </section>
+
+  <footer>
+    © <span id="footer-year"></span> Rui Moutinho · BMW · Caetano Auto
+  </footer>
+
+  <script>
+    function meta(n) {
+      var el = document.querySelector('meta[name="' + n + '"]');
+      return el ? el.getAttribute('content') || '' : '';
+    }
+    var cfg = {
+      modelo: meta('modelo'), tipo: meta('tipo'), badge: meta('badge'),
+      headline: meta('headline'), subheadline: meta('subheadline'),
+      descricao: meta('descricao'), imagem: meta('imagem-carro'),
+      preco: meta('preco'), accessKey: meta('web3forms-key')
+    };
+    var partes = cfg.tipo.split('·');
+    document.getElementById('hdr-badge').textContent      = cfg.badge;
+    document.getElementById('hero-badge-tag').textContent = cfg.badge;
+    document.getElementById('hero-modelo').textContent    = cfg.modelo;
+    document.getElementById('hero-subtipo').textContent   = cfg.tipo;
+    document.getElementById('hero-tipo-tag').textContent  = (partes[0] || '').trim();
+    document.getElementById('hero-motoriz').textContent   = (partes[1] || '').trim() + ' ›';
+    document.getElementById('desc-headline').textContent  = cfg.headline;
+    document.getElementById('desc-sub').textContent       = cfg.subheadline;
+    document.getElementById('desc-texto').textContent     = cfg.descricao;
+    document.getElementById('footer-year').textContent    = new Date().getFullYear();
+    var imgWrapper = document.getElementById('car-img-wrapper');
+    if (cfg.imagem) {
+      var img = document.createElement('img');
+      img.className = 'car-image'; img.src = cfg.imagem; img.alt = cfg.modelo;
+      img.onerror = function() { imgWrapper.innerHTML = '<div class="car-image-placeholder">Imagem em breve</div>'; };
+      imgWrapper.appendChild(img);
+    } else {
+      imgWrapper.innerHTML = '<div class="car-image-placeholder">Imagem em breve</div>';
+    }
+    if (cfg.preco) {
+      var el = document.getElementById('desc-preco');
+      el.innerHTML = cfg.preco + ' <span>c/ IVA</span>';
+      el.style.display = 'block';
+    }
+    document.getElementById('f-access-key').value = cfg.accessKey;
+    document.getElementById('f-subject').value    = 'Lead BMW — ' + cfg.modelo;
+
+    document.getElementById('lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('submit-btn');
+      btn.disabled = true; btn.textContent = 'A enviar…';
+      fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(this) })
+        .then(function(r) { return r.json(); })
+        .then(function(res) {
+          if (res.success) {
+            document.getElementById('lead-form').style.display = 'none';
+            document.getElementById('success').style.display   = 'block';
+          } else {
+            btn.disabled = false; btn.textContent = 'Enviar pedido';
+            alert('Erro ao enviar. Tente novamente.');
+          }
+        })
+        .catch(function() {
+          btn.disabled = false; btn.textContent = 'Enviar pedido';
+          alert('Sem ligação. Tente novamente.');
+        });
+    });
+  </script>
+</body>
+</html>
