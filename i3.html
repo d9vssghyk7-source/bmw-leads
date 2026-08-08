@@ -11,144 +11,125 @@
   <meta property="og:url"         content="https://d9vssghyk7-source.github.io/bmw-leads/i3.html">
   <meta property="og:locale"      content="pt_PT">
   <meta property="og:site_name"   content="BMW — Rui Moutinho">
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="BMW i3 50 xDrive First Edition">
-  <meta name="twitter:description" content="Já disponível para encomenda">
-  <meta name="twitter:image"       content="https://d9vssghyk7-source.github.io/bmw-leads/images/i3.jpg">
-  <meta name="web3forms-key"  content="e0e786a6-865d-4a8a-b94b-a78455c35213">
-  <meta name="modelo"         content="BMW i3 50 xDrive First Edition">
-  <meta name="tipo"           content="Berlina">
-  <meta name="badge"          content="Novo">
-  <meta name="headline"       content="até 906 quilómetros (WLTP)">
-  <meta name="subheadline"    content="Já disponível para encomenda">
-  <meta name="descricao"      content="">
-  <meta name="imagem-carro"   content="images/i3.jpg">
-  <!-- <meta name="preco" content=""> -->
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:image"      content="https://d9vssghyk7-source.github.io/bmw-leads/images/i3.jpg">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--blue:#1c69d4;--dark:#0a0a0a;--gray:#1a1a1a;--light:#f0f0f0;--muted:#888;--r:12px}
     html{scroll-behavior:smooth}
-    body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;background:var(--dark);color:var(--light);min-height:100vh}
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid #222;position:sticky;top:0;background:rgba(10,10,10,.92);backdrop-filter:blur(12px);z-index:100}
-    .logo{font-size:15px;font-weight:600;letter-spacing:.04em;color:#fff}.logo span{color:var(--blue)}
-    .badge-h{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--blue);border:1px solid var(--blue);padding:3px 8px;border-radius:4px}
-    .hero{padding:48px 24px 32px;max-width:480px;margin:0 auto;text-align:center}
-    .tags{display:flex;gap:8px;justify-content:center;margin-bottom:16px}
-    .tag{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:4px;border:1px solid #333;color:var(--muted)}
-    .tag.novo{border-color:var(--blue);color:var(--blue)}
-    .modelo-nome{font-size:52px;font-weight:300;letter-spacing:-.02em;line-height:1;margin-bottom:4px}
-    .modelo-tipo{font-size:14px;color:var(--muted);margin-bottom:28px}
-    .car-image{width:100%;max-width:420px;height:auto;display:block;margin:0 auto 24px;border-radius:8px}
-    .car-ph{width:100%;max-width:420px;height:220px;margin:0 auto 24px;background:linear-gradient(135deg,#111 0%,#1a1a2e 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#333;font-size:13px}
-    .tipo-b{display:inline-block;font-size:13px;color:var(--blue);margin-bottom:32px;cursor:pointer}
-    .cta{display:block;width:100%;max-width:420px;margin:0 auto;padding:18px;background:var(--blue);color:#fff;font-size:16px;font-weight:600;border:none;border-radius:var(--r);cursor:pointer;text-decoration:none;transition:background .2s,transform .1s}
-    .cta:active{transform:scale(.98)}.cta:hover{background:#1557b8}
-    .div{height:1px;background:#1e1e1e;max-width:480px;margin:0 auto}
-    .desc{max-width:480px;margin:0 auto;padding:36px 24px}
-    .sl{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-    .hl{font-size:26px;font-weight:300;line-height:1.25;margin-bottom:16px}
-    .shl{font-size:16px;color:var(--blue);margin-bottom:16px}
-    .dt{font-size:15px;color:#aaa;line-height:1.65}
-    .preco{margin-top:20px;font-size:18px;font-weight:500;color:#fff}
-    .preco span{color:var(--muted);font-size:13px}
-    .form-s{max-width:480px;margin:0 auto;padding:0 24px 60px}
-    .form-t{font-size:22px;font-weight:400;margin-bottom:6px}
-    .form-sub{font-size:14px;color:var(--muted);margin-bottom:28px}
-    .fg{margin-bottom:16px}
-    label{display:block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-    input,select,textarea{width:100%;background:var(--gray);border:1px solid #2a2a2a;border-radius:8px;color:#fff;font-size:15px;padding:14px 16px;outline:none;transition:border-color .2s;font-family:inherit}
-    input:focus,select:focus,textarea:focus{border-color:var(--blue)}
-    input::placeholder,textarea::placeholder{color:#444}
-    select option{background:#1a1a1a}
-    textarea{resize:vertical;min-height:90px}
+    body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif}
+
+    /* HERO */
+    .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+    .hbg{position:absolute;inset:0;background:#0d1117 url('https://d9vssghyk7-source.github.io/bmw-leads/images/i3.jpg') center 20%/cover no-repeat}
+    .hov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.45) 40%,rgba(0,0,0,.08) 75%,transparent 100%)}
+    .hct{position:relative;z-index:2;padding:0 32px 52px;width:100%;max-width:620px;color:#fff}
+    .hbadge{display:inline-block;background:#1c69d4;color:#fff;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;margin-bottom:14px}
+    .htipo{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:12px}
+    .hhl{font-size:50px;font-weight:300;line-height:1.05;margin-bottom:18px;letter-spacing:-.5px}
+    .hshl{font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:44px}
+    .hcta{display:inline-block;background:#1c69d4;color:#fff;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:15px 36px;text-decoration:none;transition:background .2s}
+    .hcta:hover{background:#1557b0}
+
+    /* FORM SECTION */
+    .fs{background:#fff;color:#1c1c1c;min-height:100vh;padding:72px 32px 80px}
+    .fi{max-width:520px}
+    .fm{font-size:38px;font-weight:300;margin-bottom:18px;line-height:1.15}
+    .fsub{font-size:14px;font-weight:700;margin-bottom:16px}
+    .fdesc{font-size:14px;color:#555;line-height:1.8;margin-bottom:10px}
+    .fp{font-size:16px;font-weight:600;color:#1c69d4;margin-top:10px}
+    .fdiv{height:1px;background:#e0e0e0;margin:40px 0 32px}
+    .ft{font-size:22px;font-weight:300;margin-bottom:28px;color:#000}
+    .fg{margin-bottom:20px}
+    .fg label{display:block;font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#555;margin-bottom:7px}
+    .fg input,.fg select,.fg textarea{width:100%;border:1.5px solid #d0d0d0;padding:14px 16px;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s;background:#fff;color:#000;-webkit-appearance:none;border-radius:0}
+    .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:#1c69d4}
+    .fg textarea{resize:vertical;min-height:88px}
+    .fg select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 5 5-5z' fill='%23666'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
     .hp{display:none!important}
-    .sub-btn{width:100%;padding:18px;background:var(--blue);color:#fff;font-size:16px;font-weight:600;border:none;border-radius:var(--r);cursor:pointer;margin-top:8px;transition:background .2s,transform .1s;font-family:inherit}
-    .sub-btn:active{transform:scale(.98)}.sub-btn:hover{background:#1557b8}
-    .sub-btn:disabled{background:#333;color:#666;cursor:not-allowed}
-    .ok{display:none;text-align:center;padding:40px 24px}
-    .ok .ck{font-size:48px;margin-bottom:16px}
-    .ok h3{font-size:22px;font-weight:400;margin-bottom:8px}
-    .ok p{font-size:14px;color:var(--muted)}
-    footer{text-align:center;padding:24px;font-size:12px;color:#333;border-top:1px solid #111}
+    .sb{width:100%;padding:17px;background:#1c69d4;color:#fff;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;margin-top:8px;transition:background .2s;font-family:inherit;border-radius:0}
+    .sb:hover{background:#1557b0}
+    .sb:disabled{background:#bbb;cursor:not-allowed}
+    .ok{display:none;text-align:center;padding:48px 0}
+    .ok .ck{font-size:44px;margin-bottom:20px;color:#1c69d4}
+    .ok h3{font-size:26px;font-weight:300;margin-bottom:10px}
+    .ok p{color:#777;font-size:15px}
+    footer{background:#fff;padding:24px 32px;border-top:1px solid #e8e8e8;font-size:12px;color:#aaa}
+
+    @media(max-width:600px){
+      .hct{padding:0 24px 44px}
+      .hhl{font-size:34px}
+      .fs{padding:56px 24px 64px}
+      .fm{font-size:28px}
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">BMW <span>·</span> Rui Moutinho</div>
-    <div class="badge-h" id="hdr-badge">Novo</div>
-  </header>
-  <section class="hero">
-    <div class="tags">
-      <span class="tag">Berlina</span>
-      <span class="tag novo">Novo</span>
-    </div>
-    <h1 class="modelo-nome">BMW i3 50 xDrive First Edition</h1>
-    <p class="modelo-tipo">Berlina</p>
-    <div id="car-img-wrapper"></div>
-    <a class="tipo-b" href="#formulario"> ›</a>
-    <a class="cta" href="#formulario">Saiba mais</a>
-  </section>
-  <div class="div"></div>
-  <section class="desc">
-    <p class="sl">Sobre o modelo</p>
-    <h2 class="hl">até 906 quilómetros (WLTP)</h2>
-    <p class="shl">Já disponível para encomenda</p>
-    <p class="dt"></p>
+
+<section class="hero">
+  <div class="hbg"></div>
+  <div class="hov"></div>
+  <div class="hct">
+    <div class="hbadge">Novo</div>
+    <div class="htipo">Berlina</div>
+    <h1 class="hhl">até 906 quilómetros (WLTP)</h1>
+    <p class="hshl">Já disponível para encomenda</p>
+    <a href="#formulario" class="hcta">Receber Informações</a>
+  </div>
+</section>
+
+<section class="fs" id="formulario">
+  <div class="fi">
+    <h2 class="fm">BMW i3 50 xDrive First Edition.</h2>
+    <p class="fsub">Já disponível para encomenda</p>
+    <p class="fdesc"></p>
     
-  </section>
-  <div class="div"></div>
-  <section class="form-s" id="formulario">
-    <p class="sl">Interesse</p>
-    <h2 class="form-t">Quero saber mais</h2>
-    <p class="form-sub">Deixe o seu contacto e entro em breve.</p>
-    <div class="ok" id="success">
-      <div class="ck">✅</div>
-      <h3>Pedido recebido!</h3>
-      <p>Entro em contacto consigo brevemente.</p>
+    <div class="fdiv"></div>
+    <h3 class="ft">Receber informações.</h3>
+    <div class="ok" id="ok">
+      <div class="ck">✓</div>
+      <h3>Obrigado pelo seu interesse.</h3>
+      <p>Entraremos em contacto brevemente.</p>
     </div>
-    <form id="lead-form">
+    <form id="lf">
       <input type="text" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
       <input type="hidden" name="access_key" value="e0e786a6-865d-4a8a-b94b-a78455c35213">
       <input type="hidden" name="subject"    value="Lead BMW — BMW i3 50 xDrive First Edition">
-      <input type="hidden" name="from_name"  value="BMW Leads — Landing Page">
+      <input type="hidden" name="from_name"  value="BMW Leads">
       <input type="hidden" name="redirect"   value="false">
       <input type="hidden" name="cc"         value="rui.moutinho@caetano.pt">
-      <div class="fg"><label for="f-nome">Nome *</label><input type="text" id="f-nome" name="nome" placeholder="O seu nome completo" required autocomplete="name"></div>
-      <div class="fg"><label for="f-tel">Telemóvel *</label><input type="tel" id="f-tel" name="telefone" placeholder="9X XXX XXXX" required autocomplete="tel"></div>
-      <div class="fg"><label for="f-email">Email (opcional)</label><input type="email" id="f-email" name="email" placeholder="exemplo@email.pt" autocomplete="email"></div>
-      <div class="fg"><label for="f-int">O que pretende saber?</label>
-        <select id="f-int" name="interesse">
+      <div class="fg"><label>Nome *</label><input type="text" name="nome" required placeholder="O seu nome completo" autocomplete="name"></div>
+      <div class="fg"><label>Telemóvel *</label><input type="tel" name="telefone" required placeholder="9X XXX XXXX" autocomplete="tel"></div>
+      <div class="fg"><label>Email (opcional)</label><input type="email" name="email" placeholder="exemplo@email.pt" autocomplete="email"></div>
+      <div class="fg"><label>O que pretende?</label>
+        <select name="interesse">
           <option value="">Selecionar...</option>
-          <option>Preços e condições</option>
-          <option>Test drive</option>
           <option>Financiamento</option>
           <option>Informação geral</option>
+          <option>Campanhas</option>
+          <option>Pedir Proposta</option>
         </select>
       </div>
-      <div class="fg"><label for="f-msg">Mensagem (opcional)</label><textarea id="f-msg" name="mensagem" placeholder="Alguma questão ou preferência?"></textarea></div>
-      <button type="submit" class="sub-btn" id="submit-btn">Enviar pedido</button>
+      <div class="fg"><label>Mensagem (opcional)</label><textarea name="mensagem" placeholder="Alguma questão ou preferência?"></textarea></div>
+      <button type="submit" class="sb" id="sb">Enviar pedido</button>
     </form>
-  </section>
-  <footer>© <span id="fy"></span> Rui Moutinho · BMW · Caetano Auto</footer>
-  <script>
-    document.getElementById('fy').textContent=new Date().getFullYear();
-    var iw=document.getElementById('car-img-wrapper');
-    var img=document.createElement('img');
-    img.className='car-image';img.src='images/i3.jpg';img.alt='BMW i3 50 xDrive First Edition';
-    img.onerror=function(){iw.innerHTML='<div class="car-ph">Imagem em breve</div>';};
-    iw.appendChild(img);
-    document.getElementById('lead-form').addEventListener('submit',function(e){
-      e.preventDefault();
-      var btn=document.getElementById('submit-btn');
-      btn.disabled=true;btn.textContent='A enviar…';
-      fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(this)})
-        .then(function(r){return r.json();})
-        .then(function(res){
-          if(res.success){document.getElementById('lead-form').style.display='none';document.getElementById('success').style.display='block';}
-          else{btn.disabled=false;btn.textContent='Enviar pedido';alert('Erro ao enviar. Tente novamente.');}
-        })
-        .catch(function(){btn.disabled=false;btn.textContent='Enviar pedido';alert('Sem ligação. Tente novamente.');});
-    });
-  </script>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> Rui Moutinho · BMW · Caetano Auto</footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+document.getElementById('lf').addEventListener('submit',function(e){
+  e.preventDefault();
+  var b=document.getElementById('sb');
+  b.disabled=true;b.textContent='A enviar…';
+  fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(this)})
+    .then(function(r){return r.json();})
+    .then(function(res){
+      if(res.success){document.getElementById('lf').style.display='none';document.getElementById('ok').style.display='block';}
+      else{b.disabled=false;b.textContent='Enviar pedido';alert('Erro ao enviar. Tente novamente.');}
+    })
+    .catch(function(){b.disabled=false;b.textContent='Enviar pedido';alert('Sem ligação. Tente novamente.');});
+});
+</script>
 </body>
 </html>
